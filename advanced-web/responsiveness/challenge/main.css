@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  height: 50px;
+  width: 100%;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav div {
+  width: 10%;
+  /* height: 100%; */
+  text-align: center;
+  background-color: purple;
+  padding: 10px 0;
+}
+
+
+nav ul {
+  width: 60%;
+  height: 100%;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+}
+
+.pic {
+  border-radius: 40%;
+  height: 100px;
+  width: 100px;
+  border: 2px black solid;
+  margin: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-align: center;
+}
+
+.boxes {
+  background-color: purple;
+  padding: 10px;
+  color: white;
+}
+
+#aboutme {
+  grid-area: aboutme;
+  
+}
+#hobbies {
+  grid-area: hobbies;
+ 
+}
+
+#contact {
+  grid-area: contact;
+  
+}
+
+#employment {
+  grid-area: employment;
+ 
+}
+#education {
+  grid-area: education;
+  
+}
+
+#pic {
+  grid-area: picture;
+}
+
+section { 
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 3fr 1fr;
+  grid-template-areas:
+    ". picture ." 
+    "aboutme aboutme aboutme"
+    "hobbies hobbies hobbies"
+    "contact contact contact"
+    "employment employment employment"
+    "education education education";
+    gap: 10px;
+    padding: 10px;
+
+}
+
+nav {display: none;
+grid-area: nav;
+}
+
+@media screen and (min-width: 480px) {
+  section {
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+  }
+}
+
+
+@media screen and (min-width: 550px) {
+  section {
+    grid-template-columns: 1fr 3fr 7fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 3fr 2fr;
+    grid-template-areas:
+    ". aboutme picture picture  ."
+    ". hobbies contact contact."
+    ". employment employment employment ."
+    ". education education education .";
+    gap: 10px;
+    padding: 10px;
+  }
+  nav {display: flex;
+    grid-area: nav;}
+  
+}
+
+

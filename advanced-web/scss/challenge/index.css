@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  border: 1px solid skyblue;
+  background-color: skyblue;
+  font-size: larger;
+  font-weight: bold;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+main {
+  margin: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  margin: 10px;
+  width: 300px;
+  height: 400px;
+  padding: 20px;
+  border: 1px black solid;
+  border-radius: 25px;
+  background-color: skyblue;
+  display: inline-block;
+}
+.box:hover {
+  background-color: darkblue;
+}
+
+.card {
+  margin: 10px auto;
+  width: 200px;
+  height: 100px;
+  padding: 10px;
+  border: 1px black solid;
+  border-radius: 25px;
+}
+.card--child {
+  background-color: #d1b3d1;
+}
+.card--child:hover {
+  background-color: purple;
+}
+.card--child2 {
+  background-color: #b5cab5;
+}
+.card--child2:hover {
+  background-color: yellow;
+}
+.card--child3 {
+  background-color: #d1b3d1;
+}
+.card--child3:hover {
+  background-color: purple;
+}
